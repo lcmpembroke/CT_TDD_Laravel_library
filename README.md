@@ -1,5 +1,6 @@
 # Project Name
-> Coder's Tape Test Drive Laravel short series - library project
+> Coder's Tape Test Drive Laravel short series - library project  
+See https://coderstape.com/series/6-test-driven-laravel
 
 ## Table of contents
 * [General info](#general-info)
@@ -47,7 +48,7 @@ This tutorial showed examples of
 * Tests are run from the command line
 
 ## Status
-Project is: _finished_ as this particular tutoral came to an end and needed to move on in my learning.
+Project is: _finished_ as this particular tutorial came to an end. Time to move on in learning journey.
 
 ## Inspiration
 Project inspired by a desire to learn in order to return to developer role having taken a career break to raise a family.
