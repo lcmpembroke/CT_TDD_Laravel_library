@@ -20,14 +20,12 @@ Route::post('/books', 'BooksController@store');
 Route::patch('/books/{book}-{slug}', 'BooksController@update');
 Route::delete('/books/{book}-{slug}', 'BooksController@destroy');
 
+Route::get('/authors/create', 'AuthorsController@create');
 Route::post('/authors', 'AuthorsController@store');
 
 Route::post('/checkout/{book}', 'CheckoutBookController@store');
 Route::post('/checkin/{book}', 'CheckinBookController@store');
 
-
-// Route::patch('/books/{book}-{slug}', 'BooksController@update');
-// Route::delete('/books/{book}-{slug}', 'BooksController@destroy');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

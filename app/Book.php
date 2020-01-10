@@ -32,7 +32,7 @@ class Book extends Model
                         ->first();
 
         if (is_null($reservation)) {
-            throw new Exception("Book that has not been checkout out cannot be checked in.");
+            throw new Exception("A book that has not been checkout out cannot be checked in.");
         }
         $reservation->update([
             'checked_in_at' => now()
