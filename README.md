@@ -36,8 +36,8 @@ vendor/bin/phpunit tests/Feature
 To run all unit tests in /tests/Unit folder use:
 vendor/bin/phpunit tests/Unit
 
-When testing makes things easier to set an alias, and then easy to use the filter option to specify a single test function to run within the class e.g.
-$ alias run='vendor/bin/phpunit tests/Feature/BookManagementTest.php'
+When testing makes things easier to set an alias, and then easy to use the filter option to specify a single test function to run within the class e.g.  
+$ alias run='vendor/bin/phpunit tests/Feature/BookManagementTest.php'  
 $ run --filter a_book_must_have_a_title
 
 ## Features
@@ -45,10 +45,6 @@ This tutorial showed examples of
 * Feature tests: AuthorManagementTest, BookCheckoutTest,  BookManagementTest
 * Unit tests: AuthorTest, BookReservationsTest, BookTest
 * Tests are run from the command line
-
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
 
 ## Status
 Project is: _finished_ as this particular tutoral came to an end and needed to move on in my learning.
