@@ -20,6 +20,7 @@ Note this project does not aim to provide a User Interface experience.
 
 ## Setup
 * git clone https://github.com/lcmpembroke/CT_TDD_Laravel_library.git
+* cd CT_TDD_Laravel_library
 * composer install
 * npm install 
 * cp .env.example .env
