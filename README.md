@@ -25,10 +25,10 @@ Note this project does not aim to provide a User Interface experience.
 * cp .env.example .env
 * php artisan key:generate
 * php artisan config:cache 
-* run tests using:
-vendor/bin/phpunit tests  			- runs all tests
-vendor/bin/phpunit tests/Feature    - runs Feature tests only
-vendor/bin/phpunit tests/Unit  		- runs Unit tests only
+* run tests using:  
+vendor/bin/phpunit tests  			- runs all tests  
+vendor/bin/phpunit tests/Feature    - runs Feature tests only  
+vendor/bin/phpunit tests/Unit  		- runs Unit tests only  
 
 
 * Example of filtering to one particular test function within test class:  
