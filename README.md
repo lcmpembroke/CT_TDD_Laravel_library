@@ -19,26 +19,23 @@ Note this project does not aim to provide a User Interface experience.
 * Developed on local machine. Server requirements found at laravel.com/docs/6.x
 
 ## Setup
-To setup on local machine the Laravel installer, using Composer
-* composer global require laravel/installer
+* git clone https://github.com/lcmpembroke/CT_TDD_Laravel_library.git
+* composer install
+* npm install 
+* cp .env.example .env
+* php artisan key:generate
+* php artisan config:cache 
+* run tests using:
+vendor/bin/phpunit tests  			- runs all tests
+vendor/bin/phpunit tests/Feature    - runs Feature tests only
+vendor/bin/phpunit tests/Unit  		- runs Unit tests only
 
-Ensure the laravel executable can be located by your system by placing the Composer's system-wide vendor bin directory in your $PATH
 
-Once installed use the laravel new command to create the fresh Laravel installation.
-* laravel new CT_TDD_Laravel_library
+* Example of filtering to one particular test function within test class:  
+vendor/bin/phpunit tests/Feature/AuthorManagementTest --filter an_author_can_be_created
 
-## Code Examples
-To run all tests in /tests folder use:
-vendor/bin/phpunit
-
-To run all feature tests in /tests/Feature folder use:
-vendor/bin/phpunit tests/Feature 
-
-To run all unit tests in /tests/Unit folder use:
-vendor/bin/phpunit tests/Unit
-
-When testing makes things easier to set an alias, and then easy to use the filter option to specify a single test function to run within the class e.g.  
-$ alias run='vendor/bin/phpunit tests/Feature/BookManagementTest.php'  
+* When testing makes things easier to set an alias, and then easy to use the filter option to specify a single test function to run within the class e.g.   
+$ alias run='vendor/bin/phpunit tests/Feature/BookManagementTest.php'   
 $ run --filter a_book_must_have_a_title
 
 ## Features
